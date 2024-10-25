@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+#logo {
+  position: fixed;
+  bottom: 10px;
+  width: 100px;
+  transition: 2s ease, transform 0.5s ease;
+  border-radius: 50%;
+  left: 10px;
+  z-index: 3;
+}
+
+.move-right {
+  transform: translateX(calc(100vw - 150px));
+  left: auto;
+  transition: 2s ease, transform 0.5s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: right;
+  padding: 2em;
+  height: 100vh;
+}
+
+.section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.section h2 {
+  color: #ebebeb;
+  text-align: center;
+  z-index: 2;
+  font-family: "Oswald", sans-serif;
+
+  text-align: left;
+  font-family: Arial Black;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.section p,
+.section .nav-btn,
+.linkToWsp {
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+  font-family: Verdana;
+}
+
+.section h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-size: 1.4em;
+}
+
+.section .nav-btn,
+.linkToWsp {
+  padding: 12px 24px;
+  font-size: 1em;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.section .nav-btn:hover,
+.linkToWsp:hover {
+  background-color: #005bb5;
+}
+
+.hero {
+  background-image: url("/Imgs/backg1.jpg");
+}
+
+.solution {
+  background-image: url("/Imgs/backg2.jpg");
+}
+
+.combo {
+  background-image: url("/Imgs/backg3.jpg");
+}
+
+.cta {
+  background-image: url("/Imgs/backg4.jpg");
+}
+
+#sectionCTA {
+  align-items: flex-start;
+  text-align: left;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #007aff;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0056b3;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #007aff #f1f1f1;
+}

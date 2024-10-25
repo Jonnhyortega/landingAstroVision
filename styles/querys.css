@@ -1,0 +1,14 @@
+@media(max-width: 568px){
+   .section h2{
+        font-size: 2em;
+    }
+    
+    .section p {
+        font-size: 1em;
+
+    }
+
+    #logo{
+        width: 60px;
+    }
+}
