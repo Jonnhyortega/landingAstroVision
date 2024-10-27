@@ -2,7 +2,6 @@ let currentSection = 0;
 const sections = document.querySelectorAll(".section");
 const logo = document.getElementById("logo");
 
-// Cambia el comportamiento de scroll utilizando el evento 'wheel'
 window.addEventListener("wheel", (event) => {
     event.preventDefault();
     if (event.deltaY > 0) {
@@ -14,14 +13,12 @@ window.addEventListener("wheel", (event) => {
     sections[currentSection].scrollIntoView({ behavior: "smooth" });
 });
 
-// Función para navegar a una sección específica
 function navigateToSection(index) {
     currentSection = index;
     updateLogoPosition();
     sections[currentSection].scrollIntoView({ behavior: "smooth" });
 }
 
-// Actualiza la posición del logo
 function updateLogoPosition() {
     if (currentSection === 3) {
         logo.classList.add("move-right");

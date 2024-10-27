@@ -10,7 +10,7 @@
 }
 
 .move-right {
-  transform: translateX(calc(100vw - 150px));
+  transform: translateX(calc(100vw - 110px));
   left: auto;
   transition: 2s ease, transform 0.5s ease;
 }
